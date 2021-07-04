@@ -72,15 +72,15 @@ ul li a {
   background-size: cover;
   color: aliceblue;
   z-index: -1;
-  .fa-whatsapp {
-    color: #fff;
-    background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat,
-      radial-gradient(#25d366 58%, transparent 0);
-    margin-left: 88%;
-    margin-bottom: 5%;
-  }
-}
 
+}
+.fa-whatsapp {
+  color: #fff;
+  background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat,
+    radial-gradient(#25d366 58%, transparent 0);
+  margin-left: 88%;
+  margin-bottom: 5%;
+}
 .container {
   position: relative;
   text-align: center;
