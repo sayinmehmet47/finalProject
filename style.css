@@ -86,6 +86,20 @@ ul li a {
   margin-bottom: 5%;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .parallax-inner {
   padding-top: 20%;
   padding-bottom: 20%;

@@ -16,3 +16,13 @@ $ = require('jquery');
 $('.tag').click(function () {
   return console.log('clicked');
 });
+
+
+
+var x = window.matchMedia("(max-width: 700px)")
+x.addEventListener(e=>{
+
+console.log("gfdsga")
+
+
+})

@@ -65,6 +65,7 @@ ul li a {
   text-decoration: none;
 }
 
+
 .parallax {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('./img/mushrooms-6320451_960_720.webp') repeat fixed 100%;
@@ -78,6 +79,18 @@ ul li a {
     margin-left: 88%;
     margin-bottom: 5%;
   }
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .parallax-inner {
