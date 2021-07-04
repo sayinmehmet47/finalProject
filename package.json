@@ -1,0 +1,27 @@
+{
+  "name": "finalProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayinmehmet47/finalProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayinmehmet47/finalProject/issues"
+  },
+  "homepage": "https://github.com/sayinmehmet47/finalProject#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.0-beta3",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.6.0",
+    "node-sass": "^6.0.1"
+  }
+}

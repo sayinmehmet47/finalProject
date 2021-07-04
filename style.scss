@@ -1,0 +1,105 @@
+$primary: #ecf0f1;
+$secondary: #ffe400;
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 0;
+  background-color: #f4f5f6;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding: 10px 0px;
+  margin-top: 60px;
+}
+
+.sidebar a {
+  padding: 2px 2px 2px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.sidebar a:hover {
+  color: white;
+  background-color: black;
+}
+
+input {
+  border: solid 1px #ddd;
+}
+
+input.search {
+  margin-left: 5px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-position-y: 0.9px;
+  background-position-x: 200px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVDhP5ZI9C4MwEIb7//+BEDgICA6C4OQgBJy6dRIEB6EgCNkEJ4e3iT2oHzH9wHbpAwfyJvfkJDnhYH4kHDVKlSAigSAQoCiBKjVGXvaxFXZnxBQYkSlBICII+22K4jM63rbHSthCSdsskVX9Y6KxR5XJSSpVy6GbpbBKp6aw0BzM0ShCe1iKihMXC6EuQtMQwukzPFu3fFd4+C+/cimUNxy6WQkNnmdzL3NYPfDmLVuhZf2wZYz80qDkKX1St3CXAfVMqq4cz3hTaGEpmctxDPmB0M/fCYEbAwZYyVKYcroAAAAASUVORK5CYII=);
+}
+
+nav .third li:hover {
+  color: red;
+  cursor: pointer;
+}
+li:hover {
+  cursor: pointer;
+}
+ul li a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('./img/mushrooms-6320451_960_720.webp') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  z-index: -1;
+  .fa-whatsapp {
+    color: #fff;
+    background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat,
+      radial-gradient(#25d366 58%, transparent 0);
+    margin-left: 88%;
+    margin-bottom: 5%;
+  }
+}
+
+.parallax-inner {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+h3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h1 {
+  font-size: 160px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
