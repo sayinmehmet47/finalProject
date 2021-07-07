@@ -1,8 +1,7 @@
 $primary: #ecf0f1;
 $secondary: #ffe400;
 * {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
+  // font-family: "Open Sans";
   box-sizing: border-box;
 }
 body {
@@ -122,4 +121,4 @@ h1 {
 }
 
 @import './node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext);
