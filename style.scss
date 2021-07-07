@@ -10,6 +10,7 @@ body {
   width: 100%;
 }
 
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -105,6 +106,12 @@ h3 {
 h1 {
   font-size: 160px;
   text-align: center;
+}
+.card{
+  img, svg {
+    vertical-align: middle;
+    height: 350px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
