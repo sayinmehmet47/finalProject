@@ -1,65 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Title</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
 </head>
 
 <body>
+    <header class="">
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+        <nav class="justify-content-around fixed-top align-items-center d-none d-lg-flex
+        py-1 bg-primary text-dark" style="list-style-type: none;">
+            <li><img src="../img/b31242dbc25949ac8ede0861804e325f.png" width="180px" height="70px"></li>
+
+            <ul class="d-flex justify-content-between fs-5 fw-bold align-items-center" style="list-style-type: none;">
+                <li class="mx-3 mt-4">
+                    <a href="../index.html">Anasayfa</a>
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./kurumsal">Kurumsal</a>
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./galeri.html">Foto Galeri</a>
+
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./urunler">Urunler</a>
+
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./iletisim">Bize Ulasin</a>
+
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./talep">Talep Formu</a>
+
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-lg-none navbar-dark bg-primary ">
+            <div class="container-fluid">
+                <img src="../img/b31242dbc25949ac8ede0861804e325f.png" width="180px" height="70px">
+                <button class="btn btn-success me-3" onclick="myFunction()" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        </nav>
+        <div id="mySidebar" class="sidebar fw-bold d-lg-none">
+            <a href="../index.html">Anasayfa</a>
+            <a href="./kurumsal">Kurumsal</a>
+            <a href="./galeri">Foto Galeri</a>
+            <a href="./urunler">Urunler</a>
+            <a href="./iletisim">Bize Ulasin</a>
+            <a href="./talep">Talep Formu</a>
         </div>
+    </header>
+    <div id="carouselExampleInterval" class="carousel slide w-50 ms-auto me-auto" style="margin-top: 200px;"
+        data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="../img/nifMantar/WhatsApp Image 2021-07-05 at 00.49.00.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
+                <img src="../img/nifMantar/WhatsApp Image 2021-07-05 at 00.40.47 (1).jpeg" class="d-block w-100"
+                    alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="../img/nifMantar/WhatsApp Image 2021-07-05 at 00.49.00 (1).jpeg" class="d-block w-100"
-                    alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
+                <img src="../img/nifMantar/WhatsApp Image 2021-07-05 at 00.40.49.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/nifMantar/WhatsApp Image 2021-07-05 at 00.48.59.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
+                <img src="../img/nifMantar/WhatsApp Image 2021-07-05 at 00.40.44.jpeg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+
 </body>
 
 </html>
