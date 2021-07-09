@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="">
+
+        <nav class="justify-content-around fixed-top align-items-center d-none d-lg-flex
+        py-1 bg-primary text-dark" style="list-style-type: none;">
+            <li><img src="../img/b31242dbc25949ac8ede0861804e325f.png" width="180px" height="70px"></li>
+
+            <ul class="d-flex justify-content-between fs-5 fw-bold align-items-center" style="list-style-type: none;">
+                <li class="mx-3 mt-4">
+                    <a href="../index.html">Anasayfa</a>
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./kurumsal">Kurumsal</a>
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./galeri.html">Foto Galeri</a>
+
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./urunler">Urunler</a>
+
+                </li>
+                <li class="mx-3 mt-4">
+                    <a style="pointer-events: none;" href="./iletisim">Bize Ulasin</a>
+
+                </li>
+                <li class="mx-3 mt-4">
+                    <a href="./talep">Talep Formu</a>
+
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-lg-none navbar-dark bg-primary ">
+            <div class="container-fluid">
+                <img src="../img/b31242dbc25949ac8ede0861804e325f.png" width="180px" height="70px">
+                <button class="btn btn-success me-3" onclick="myFunction()" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        </nav>
+        <div id="mySidebar" class="sidebar fw-bold d-lg-none">
+            <a href="../index.html">Anasayfa</a>
+            <a href="./kurumsal">Kurumsal</a>
+            <a href="./galeri.html">Foto Galeri</a>
+            <a href="./urunler">Urunler</a>
+            <a href="./iletisim">Bize Ulasin</a>
+            <a href="./talep">Talep Formu</a>
+        </div>
+    </header>
+
+    <main>
+        <div style="margin-top: 185px;">
+            <h1>Haritaki Yerimiz</h1>
+            <div id='map' class="container-fluid mt-5">
+            </div>
+
+
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+
+
+    </main>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2F5aW5tZWhtZXQ0NyIsImEiOiJja3ByZWN3d2YzM3A4MnBvODhmcm95N3UxIn0.V3Jz4WGICqwetae4kgj-8g';
+        var map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [27.451, 38.440], // starting position [lng, lat]
+            zoom: 15 // starting zoom
+        });
+        var marker = new mapboxgl.Marker()
+            .setLngLat([27.451, 38.440])
+            .addTo(map);
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
