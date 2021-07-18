@@ -166,7 +166,35 @@ h1 {
   border: none;
   cursor: pointer;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-gap: 15px;
+  margin-top: 85px;
+  
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+
+
+@media only screen and (max-width: 800px) {
+
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 15px;
+    margin-top: 85px;
+    
+  }
+
+}
 
 @media only screen and (max-width: 500px) {
   body {
@@ -177,7 +205,14 @@ h1 {
     width: 420px;
      height: 180px;
   }
-
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 15px;
+    margin-top: 85px;
+    
+  }
 
 
 }
